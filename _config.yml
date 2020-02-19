@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: ""
+baseurl: "https://github.com/realblack0/realblack0.github.io.git"
 url: "https://realblack0.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
