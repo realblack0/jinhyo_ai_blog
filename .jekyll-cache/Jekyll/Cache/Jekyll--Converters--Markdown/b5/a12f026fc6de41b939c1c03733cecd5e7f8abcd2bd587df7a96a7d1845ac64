@@ -1,4 +1,4 @@
-I"Ø"<p>Test article, get the source on <a href="https://github.com/Sylhare/Type-on-Strap/blob/gh-pages/_posts/2013-12-12-toc.js-for-table-of-content.md">github</a>.</p>
+I"Ê"<p>Test article, get the source on <a href="https://github.com/Sylhare/Type-on-Strap/blob/gh-pages/_posts/2013-12-12-toc.js-for-table-of-content.md">github</a>.</p>
 
 <h1 id="using-kramdown-gfm-">Using Kramdown GFM <!--more--></h1>
 
@@ -44,7 +44,7 @@
 
 <p>If you want to customize the theme it is up to you, you can add the <code class="highlighter-rouge">toc.js</code> file into the <code class="highlighter-rouge">asset &gt; js</code> and add it into the <code class="highlighter-rouge">page.html</code> layout with:</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/Type-on-Strap/assets/js/toc.js"</span> <span class="nt">&gt;&lt;/script&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"/assets/js/toc.js"</span> <span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div></div>
 <p>Then you can use it as it is said on the repository.</p>
 
