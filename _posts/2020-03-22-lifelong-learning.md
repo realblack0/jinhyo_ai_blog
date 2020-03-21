@@ -5,7 +5,7 @@ tags: [DeepLearning]
 author: jinhyo
 feature-img: /assets/img/pexels/triangular.jpeg 
 use_math: true
-keywords: __new__, __init__, __call__
+keywords: continuous learning, EWC, Progressive Network, DGR, DEN
 ---
 
 ## 등장배경
@@ -45,7 +45,8 @@ Neural Network의 weight을 예전 task의 성능에 기여한 중요도에 따�
 - Task A를 학습한 정보에서 어떤 weight가 task A의 성능에 중요한지 파악하기 위해서 확률적인 관점에서 접근한다. Task A의 dataset이 주어졌을 때 $\theta$가 나올 조건부확률은 $\theta$의 중요도라고 해석할 수 있다. 확률이 높을수록 중요도가 높다.
 
 $$
-\begin{align*}\log p(\theta|D) &= \log p(D|\theta) + \log p(\theta) - \log p(D) \ &= \log p(D_B | \theta) + \log p(\theta | D_A ) - \log p (D_B)\end{align*}
+\begin{align*}\log p(\theta|D) & = \log p(D|\theta) + \log p(\theta) - \log p(D) \\
+& = \log p(D_B | \theta) + \log p(\theta | D_A ) - \log p (D_B)\end{align*}
 $$  
 
 - EWC는 $F_i$(Fisher information matrix)를 활용하여 weight parameter에 제한을 가하는 Loss function(손실함수)을 사용한다.
@@ -128,9 +129,9 @@ Lifelong Learning은 분류 문제 뿐만 아니라 여러 분야에 적용할 �
 
 ## 이미지 출처 및 참고
 
-[1]  James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran, Raia Hadsell. Overcoming catastrophic forgetting in neural networks, arXiv:1612.00796,  2016
-[2]  Andrei A. Rusu, Neil C. Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu, Raia Hadsell. Progressive Neural Networks, arXiv:1606.04671, 2016
-[3]  Hanul Shin, Jung Kwon Lee, Jaehong Kim, Jiwon Kim. Continual Learning with Deep Generative Replay, arXiv:1705.08690, 2017
-[4]  Jaehong Yoon, Eunho Yang, Jeongtae Lee, Sung Ju Hwang. LIFELONG LEARNING WITH DYNAMICALLY EXPANDABLE NETWORKS, arXiv:1708.01547, 2017
-[5]  http://dmqm.korea.ac.kr/activity/seminar/266
+[1]  James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran, Raia Hadsell. Overcoming catastrophic forgetting in neural networks, arXiv:1612.00796,  2016  
+[2]  Andrei A. Rusu, Neil C. Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu, Raia Hadsell. Progressive Neural Networks, arXiv:1606.04671, 2016  
+[3]  Hanul Shin, Jung Kwon Lee, Jaehong Kim, Jiwon Kim. Continual Learning with Deep Generative Replay, arXiv:1705.08690, 2017  
+[4]  Jaehong Yoon, Eunho Yang, Jeongtae Lee, Sung Ju Hwang. LIFELONG LEARNING WITH DYNAMICALLY EXPANDABLE NETWORKS, arXiv:1708.01547, 2017  
+[5]  http://dmqm.korea.ac.kr/activity/seminar/266  
 [6]  https://tv.naver.com/v/3941879
