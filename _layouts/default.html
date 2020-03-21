@@ -6,7 +6,13 @@
     https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
 -->
 <html lang="en">
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
+  </head>
+    
   <body>
     {% include navbar.html %}
     <div class="content">
