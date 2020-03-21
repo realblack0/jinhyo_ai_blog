@@ -4,6 +4,7 @@ title: "평생학습(Lifelong Learning)에 대한 survey"
 tags: [DeepLearning]
 author: jinhyo
 feature-img: /assets/img/pexels/triangular.jpeg 
+use_math: true
 keywords: __new__, __init__, __call__
 ---
 
