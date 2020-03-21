@@ -45,10 +45,7 @@ Neural Network의 weight을 예전 task의 성능에 기여한 중요도에 따�
 - Task A를 학습한 정보에서 어떤 weight가 task A의 성능에 중요한지 파악하기 위해서 확률적인 관점에서 접근한다. Task A의 dataset이 주어졌을 때 $\theta$가 나올 조건부확률은 $\theta$의 중요도라고 해석할 수 있다. 확률이 높을수록 중요도가 높다.
 
 $$
-\begin{align*}
-\log p(\theta|D) &= \log p(D|\theta) + \log p(\theta) - \log p(D) \ 
-&= \log p(D_B | \theta) + \log p(\theta | D_A ) - \log p (D_B)
-\end{align*}
+\begin{align*}\log p(\theta|D) &= \log p(D|\theta) + \log p(\theta) - \log p(D) \ &= \log p(D_B | \theta) + \log p(\theta | D_A ) - \log p (D_B)\end{align*}
 $$  
 
 - EWC는 $F_i$(Fisher information matrix)를 활용하여 weight parameter에 제한을 가하는 Loss function(손실함수)을 사용한다.
