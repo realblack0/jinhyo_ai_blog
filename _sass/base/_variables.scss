@@ -1,8 +1,9 @@
 // Typography
-$font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-family-headings: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+$font-family-main: "Nanum Gothic", 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-headings: "Nanum Gothic", 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $font-family-logo: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-size: 1.25em;
+$font-size: 1.063em;
 
 // Padding
 $padding-x-large: 23%;
