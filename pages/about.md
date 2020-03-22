@@ -12,4 +12,3 @@ feature-img: "assets/img/pexels/circuit.jpeg"
 CV와 NLP 중에 하나만 고르라면 못 고르겠어요. 둘다 하고 싶어요.  
 brain inspired learning에 관심이 많아요.  
 유니콘이 되고 싶어요.  
-괴물이 되자...
