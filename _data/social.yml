@@ -10,7 +10,7 @@ gitlab:
 github: "sylhare"
 instagram:
 keybase:
-linkedin:         # Full URL
+linkedin: "https://www.linkedin.com/in/jinhyo-shin-211532168/"        # Full URL
 pinterest:
 reddit:
 soundcloud:
@@ -31,6 +31,6 @@ share:
   pinterest:
   pocket:
   reddit: 
-  linkedin:
+  linkedin: true
   wordpress:
   email: true
