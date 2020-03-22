@@ -106,7 +106,7 @@ Regularization 접근법과 Structure 접근법이 Neural Network 모델링 관�
 
 #### ▷ DEN (Dynamically Expandable Network)
 
-<center><img src="https://user-images.githubusercontent.com/50395556/77243067-e2fe8e80-6c48-11ea-9877-310904177772.png" title="den_resize2" width=600px></center>
+<center><img src="https://user-images.githubusercontent.com/50395556/77243124-bb5bf600-6c49-11ea-8ee4-99e62915fc3f.png" title="DEN_rgb" width=600px></center>
 
 - 최초, task A에 대한 학습은 L1 regularization을 이용하여 weight가 sparse(희소)하게 학습한다. L1 regularization은 weight가 정확하게 0으로 떨어지도록 유도하는 특성이 있다. DEN은 이 특성을 현재 task에 중요한 weight parameter를 분별하는 용도로 사용한다. 가중치가 정확하게 0일 경우 모델에서 해당 weight parameter를 삭제한다. 위 그림에서는 가중치가 0인 weight를 점선으로 표시하였다. 이후 다음과 같은 3단계를 통해서 새로운 task를 학습한다.
 
