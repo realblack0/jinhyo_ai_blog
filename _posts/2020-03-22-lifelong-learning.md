@@ -74,7 +74,7 @@ Neural Network의 구조를 동적으로 변경함으로써 새로운 task를 �
 
 - Transfer Learning은 모델이 학습한 사전지식을 weight 초기화 단계에서 통합시키는 반면, Progressive Networks는 새로운 task를 학습할 때 모든 사전지식을 그대로 남겨둔다. 새로운 task를 학습할 때는 Network에 sub network를 추가하여 구조를 변경한다. Sub network는 새로운 task를 학습하는데만 사용되며, 사전지식으로부터 유용한 feature를 추출하여 sub network 학습에 활용한다. 그림을 통해 학습 과정을 살펴보자.
 
-<center><img src="https://user-images.githubusercontent.com/50395556/77232370-fb888d80-6be3-11ea-989b-8e81197cb9b4.png" title="Progressive Network" width=600px></center>
+<center><img src="https://user-images.githubusercontent.com/50395556/77232370-fb888d80-6be3-11ea-989b-8e81197cb9b4.png" title="Progressive Network" width="600px"></center>
 
 - (1) Task 1을 학습할 때는 Deep Neural Network의 기본 구조를 이용한다.
 - (2) Task 2를 학습한다. 모델에 sub network (column)를 추가하고, 기존에 있던 Network의 weight는 고정한다. 그림에서는 고정한 weight는 점선으로 표시하였다. weight를 고정하는 이유는 Catastrophic forgetting을 방지하기 위함이다. 기존 Network의 l번째 hidden layer의 출력은 새로 추가된 sub network의 l+1번째 layer의 추가적인 input으로 사용한다. 기존 weight를 추가된 sub network에 통합하는 과정을 lateral connection(측면 연결)이라고 한다.
@@ -106,13 +106,13 @@ Regularization 접근법과 Structure 접근법이 Neural Network 모델링 관�
 
 #### ▷ DEN (Dynamically Expandable Network)
 
-<img src="https://user-images.githubusercontent.com/50395556/77243177-8a2ff580-6c4a-11ea-9e27-77f8c4964886.png" title="DEN_resized3" width=600px>
+<img src="https://user-images.githubusercontent.com/50395556/77243177-8a2ff580-6c4a-11ea-9e27-77f8c4964886.png" title="DEN_resized3" width="600px">
 
 ![DEN_resized3](https://user-images.githubusercontent.com/50395556/77243177-8a2ff580-6c4a-11ea-9e27-77f8c4964886.png)
 
 - 최초, task A에 대한 학습은 L1 regularization을 이용하여 weight가 sparse(희소)하게 학습한다. L1 regularization은 weight가 정확하게 0으로 떨어지도록 유도하는 특성이 있다. DEN은 이 특성을 현재 task에 중요한 weight parameter를 분별하는 용도로 사용한다. 가중치가 정확하게 0일 경우 모델에서 해당 weight parameter를 삭제한다. 위 그림에서는 가중치가 0인 weight를 점선으로 표시하였다. 이후 다음과 같은 3단계를 통해서 새로운 task를 학습한다.
 
-<center><img src="https://user-images.githubusercontent.com/50395556/77232441-3d193880-6be4-11ea-96cd-ff7262a75d80.png" title="DEN2" width=600px></center>
+<center><img src="https://user-images.githubusercontent.com/50395556/77232441-3d193880-6be4-11ea-96cd-ff7262a75d80.png" title="DEN2" width="600px"></center>
 
 - (1) Selective retraining 단계는 task B를 학습하는데 중요한 node를 탐색하고 weight를 갱신한다. 먼저 Layer 1까지의 weight는 고정하고 L1 regularization으로 학습하면 task B를 학습하는데 중요한 Layer 2의 node를 찾을 수 있다. 그림에서는 노란색 node에 해당한다. 이 node의 연결선을 따라가면 task B를 학습하는데 중요한 Layer 1의 node를 찾을 수 있다. 계속해서 연결선을 따라가면 task B를 학습하는데 중요한 모든 node와 weight를 찾을 수 있다. 탐색과정이 끝나면 L2 regualrization으로 학습하며 중요한 node와 weight를 미세조정한다.
 - (2) Dynamic network expansion 단계는 새로운 task를 학습하는데 모델의 capacity가 부족할 경우 Network를 확장한다. Selective retraining 결과, 새로운 task에 대한 loss가 임계치(threshold) 이상일 경우는 모델의 capacity가 부족하다고 판단한다. 레이어별로 임의의 개수만큼 node를 추가한다. Group sparsity regularization을 이용해 추가된 k개의 node 중 필요 없는 node는 제거하고, 제거되지 않은 node도 sparse하게 만든다.
@@ -121,7 +121,7 @@ Regularization 접근법과 Structure 접근법이 Neural Network 모델링 관�
 
 ## 활용 방안
 
-<center><img src="https://user-images.githubusercontent.com/50395556/77232453-4dc9ae80-6be4-11ea-88f6-47541b9909d7.png" title="Lifelong Learning usage" width=600px></center>
+<center><img src="https://user-images.githubusercontent.com/50395556/77232453-4dc9ae80-6be4-11ea-88f6-47541b9909d7.png" title="Lifelong Learning usage" width="600px"></center>
 
 데이터는 끊임없이 증가하고 있다. 데이터가 충분히 많아짐에 따라 클래스도 다양해지고 있다. 시장 수요 또는 연구 목적에 따라서 기존에 분류했던 클래스가 더 세분화되는 경우도 있고, 아예 새로운 클래스가 추가되기도 한다. 클래스가 추가될 때마다 모델을 새로 구축하는 방법으로는 급증하는 데이터의 속도를 따라갈 수도 없을뿐더러 모델을 교체할 때마다 비용도 발생한다. Lifelong Learning은 모델을 교체하지 않고 새로운 클래스를 추가할 수 있고 데이터의 변화에도 실시간 대응할 수 있다.
 
@@ -135,5 +135,5 @@ Lifelong Learning은 분류 문제 뿐만 아니라 여러 분야에 적용할 �
 [2]  Andrei A. Rusu, Neil C. Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu, Raia Hadsell. Progressive Neural Networks, arXiv:1606.04671, 2016  
 [3]  Hanul Shin, Jung Kwon Lee, Jaehong Kim, Jiwon Kim. Continual Learning with Deep Generative Replay, arXiv:1705.08690, 2017  
 [4]  Jaehong Yoon, Eunho Yang, Jeongtae Lee, Sung Ju Hwang. LIFELONG LEARNING WITH DYNAMICALLY EXPANDABLE NETWORKS, arXiv:1708.01547, 2017  
-[5]  http://dmqm.korea.ac.kr/activity/seminar/266  
-[6]  https://tv.naver.com/v/3941879
+[5]  [http://dmqm.korea.ac.kr/activity/seminar/266](http://dmqm.korea.ac.kr/activity/seminar/266)  
+[6]  [https://tv.naver.com/v/3941879](https://tv.naver.com/v/3941879)
