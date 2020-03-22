@@ -6,7 +6,6 @@ feature-img: "assets/img/pexels/circuit.jpeg"
 tags: [About]
 ---
 
-
 ![img](https://avatars2.githubusercontent.com/u/50395556?s=460&u=d28330a00da5a634499af9eb3441768d92e3bbdb&v=4)  
 
 현) AI 이노베이션 센터 조교
