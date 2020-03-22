@@ -12,11 +12,11 @@ keywords: continuous learning, EWC, Progressive Network, DGR, DEN
 
 AI 연구자들은 인간의 인지 메커니즘을 모방하여 AI의 성능을 높이고자 노력해왔다. 그런 노력 중 하나가 Transfer Learning(전이 학습)이다. 인간은 과거에 학습했던 내용을 기반으로 새로운 내용을 빠르게 습득한다. AI도 과거에 학습했던 내용을 기반으로 비슷한 Task(과제)를 잘 학습할 수 있을까? 라는 아이디어에서 출발한 Transfer Learning은 잘 학습된 모델의 pre-trained weights(사전훈련 가중치)를 새로운 모델의 학습에 활용함으로써 학습 속도가 빠르고 성능이 우수한 모델을 만드는 기법이다. 실제로 강아지를 구분하도록 학습한 AI는 고양이도 잘 구분할 수 있었다. 하지만 새롭게 학습된 모델은, 과거 학습 내용을 잊어버리는 치명적인 문제가 발견된다.
 
-### ▷ Catastrophic forgetting(파괴적 망각)
+#### ▷ Catastrophic forgetting(파괴적 망각)
 
 - 현재 Neural Network(인공신경망)은 Single task(단일 과제)에 대해서는 뛰어난 성능을 보이지만, 다른 종류의 task를 학습하면 이전에 학습했던 task에 대한 성능이 현저하게 떨어지는 문제가 있다. 이를 Catastrophic forgetting이라고 한다. 이 현상은 이전 학습 dataset과 새로운 학습 dataset 사이에 연관성이 있더라도 이전 dataset에 대한 정보를 대량으로 손실한다.
 
-### ▷ Semantic drift(의미 변화)
+#### ▷ Semantic drift(의미 변화)
 
 - 새로 학습하는 과정에서 pre-trained weight가 과도하게 조정될 경우를 Neural Network의 Node(노드)나 weight의 의미가 변했다고 해석할 수 있다. 예를 들어 어떤 Node가 강아지의 귀에 대한 정보를 담고 있었는데, 고양이를 학습한 후 Node가 발바닥에 대한 정보를 처리하도록 바뀌는 것이다. 이를 Semantic drift라고 하며 Catastrophic forgetting과 밀접한 관계가 있다.
 
@@ -106,7 +106,7 @@ Regularization 접근법과 Structure 접근법이 Neural Network 모델링 관�
 
 #### ▷ DEN (Dynamically Expandable Network)
 
-<center><img src="https://user-images.githubusercontent.com/50395556/77242975-ba29c980-6c47-11ea-8748-73577d857821.png" title="den_resize" width=600px></center>
+<center><img src="https://user-images.githubusercontent.com/50395556/77243067-e2fe8e80-6c48-11ea-9877-310904177772.png" title="den_resize2" width=600px></center>
 
 - 최초, task A에 대한 학습은 L1 regularization을 이용하여 weight가 sparse(희소)하게 학습한다. L1 regularization은 weight가 정확하게 0으로 떨어지도록 유도하는 특성이 있다. DEN은 이 특성을 현재 task에 중요한 weight parameter를 분별하는 용도로 사용한다. 가중치가 정확하게 0일 경우 모델에서 해당 weight parameter를 삭제한다. 위 그림에서는 가중치가 0인 weight를 점선으로 표시하였다. 이후 다음과 같은 3단계를 통해서 새로운 task를 학습한다.
 
