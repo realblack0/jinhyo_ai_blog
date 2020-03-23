@@ -3,7 +3,7 @@ layout: post
 title: "사람인 공고 크로울러"
 img: "assets/img/portfolio/saramin_crawl.png"
 date: 28 February 2020
-tags: [portfolio]
+tags: [ortfolio]
 ---
 <div align="center">
   <a href="https://github.com/realblack0/saramin_crawl">
