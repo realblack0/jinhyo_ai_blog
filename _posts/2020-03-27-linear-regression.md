@@ -153,7 +153,7 @@ $\hat{y_{5}} =b+x_{5} w$
 성과급을 추정하는 문제는 연립 방정식으로 표현할 수 있고, 벡터 연산으로 바꿀 수 있다. 그러므로 위의 단순 회귀 모델은 아래와 같이 표현할 수 있다.  
 
 $$
-\begin{align}
+\begin{align*}
 {\hat{Y}} =X \theta
 \space \space
 (단,
@@ -161,7 +161,7 @@ $$
 X= \left( \begin{array}{c} 1 x_{1} \\ 1 \ x_{2} \\ 1 \ x_{3} \\ 1 \ x_{4} \\ 1 \ x_{5} \\ \end{array} \right), 
 \theta= \left( \begin{array}{c} b \\ w \\ \end{array} \right) 
 )
-\end{align}
+\end{align*}
 $$   
 
 이때, 실제값 벡터와 예측값 벡터의 오차 벡터 e는 다음과 같다.  
