@@ -144,15 +144,16 @@ ${\sigma} over {\sigma w} cost(w,b)$는 접선의 기울기이다. 기울기가 
 OLS(Ordinary Least Squares)는 RSS(Residual Sum of Squares)를 최소화하는 가중치 벡터를 행렬 미분으로 구하는 방법이다. 통계학에서는 실제값과 예측값의 오차를 residual이라고 부른다. 그러므로 RSS와 SSE(Sum of Squared Errors)는 같다.  
 
 
-&\hat{y_{1}} =b+x_{1} w&  
-&\hat{y_{2}} =b+x_{2} w&  
-&\hat{y_{3}} =b+x_{3} w&  
-&\hat{y_{4}} =b+x_{4} w&  
-&\hat{y_{5}} =b+x_{5} w&  
+$\hat{y_{1}} =b+x_{1} w$  
+$\hat{y_{2}} =b+x_{2} w$  
+$\hat{y_{3}} =b+x_{3} w$  
+$\hat{y_{4}} =b+x_{4} w$  
+$\hat{y_{5}} =b+x_{5} w$  
 
 성과급을 추정하는 문제는 연립 방정식으로 표현할 수 있고, 벡터 연산으로 바꿀 수 있다. 그러므로 위의 단순 회귀 모델은 아래와 같이 표현할 수 있다.  
 
 $$
+\begin{align}
 {\hat{Y}} =X \theta
 \space \space
 (단,
@@ -160,6 +161,7 @@ $$
 X= \left( \begin{array}{c} 1 x_{1} \\ 1 \ x_{2} \\ 1 \ x_{3} \\ 1 \ x_{4} \\ 1 \ x_{5} \\ \end{array} \right), 
 \theta= \left( \begin{array}{c} b \\ w \\ \end{array} \right) 
 )
+\end{align}
 $$   
 
 이때, 실제값 벡터와 예측값 벡터의 오차 벡터 e는 다음과 같다.  
@@ -177,9 +179,7 @@ SSE & = e^{T} e \\
 \end{align*}
 $$  
 
-$\theta^{T} X^{T} Y$와 $Y^{T} X \theta$는 벡터 내적 결과 같은 scalar 값이 되므로 하나로 정리할 수 있다.  
-
-비용함수를 최소로 하는 가중치 벡터 $\theta$를 구하기 위해서 비용함수를 $\theta$로 미분한 기울기 벡터는 다음과 같다. 기울기 벡터가 0일 때 비용함수가 최솟값을 가지므로 다음 식이 성립한다.  
+$\theta^{T} X^{T} Y$와 $Y^{T} X \theta$는 벡터 내적 결과 같은 scalar 값이 되므로 하나로 정리할 수 있다. 비용함수를 최소로 하는 가중치 벡터 $\theta$를 구하기 위해서 비용함수를 $\theta$로 미분한 기울기 벡터는 다음과 같다. 기울기 벡터가 0일 때 비용함수가 최솟값을 가지므로 다음 식이 성립한다.  
 
 $$
 \begin{align*}
@@ -219,7 +219,7 @@ X^T X = \left( \begin{array}{c}
 $$  
 
 $$
-X^T X = \left( \begin{array}{c} 
+X^T Y = \left( \begin{array}{c} 
 1 \ 1 \ 1 \ 1 \ 1 \\  
 2 \ 5 \ 8 \ 13 \ 10 \\
 \end{array} \right) 
