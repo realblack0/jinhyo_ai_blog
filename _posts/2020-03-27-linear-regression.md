@@ -143,13 +143,12 @@ ${\sigma} over {\sigma w} cost(w,b)$는 접선의 기울기이다. 기울기가 
 
 OLS(Ordinary Least Squares)는 RSS(Residual Sum of Squares)를 최소화하는 가중치 벡터를 행렬 미분으로 구하는 방법이다. 통계학에서는 실제값과 예측값의 오차를 residual이라고 부른다. 그러므로 RSS와 SSE(Sum of Squared Errors)는 같다.  
 
-$$
-\hat{y_{1}} =b+x_{1} w  \\
-\hat{y_{2}} =b+x_{2} w  \\
-\hat{y_{3}} =b+x_{3} w  \\
-\hat{y_{4}} =b+x_{4} w  \\
-\hat{y_{5}} =b+x_{5} w
-$$  
+
+&\hat{y_{1}} =b+x_{1} w&  
+&\hat{y_{2}} =b+x_{2} w&  
+&\hat{y_{3}} =b+x_{3} w&  
+&\hat{y_{4}} =b+x_{4} w&  
+&\hat{y_{5}} =b+x_{5} w&  
 
 성과급을 추정하는 문제는 연립 방정식으로 표현할 수 있고, 벡터 연산으로 바꿀 수 있다. 그러므로 위의 단순 회귀 모델은 아래와 같이 표현할 수 있다.  
 
@@ -217,9 +216,9 @@ X^T X = \left( \begin{array}{c}
 5 \ 38 \\ 
 38 \ 362 \\ 
 \end{array} \right)
-$  
+$$  
 
-$
+$$
 X^T X = \left( \begin{array}{c} 
 1 \ 1 \ 1 \ 1 \ 1 \\  
 2 \ 5 \ 8 \ 13 \ 10 \\
