@@ -4,7 +4,7 @@ title: "Linear Regression(선형 회귀) 경사하강법과 최소자승법으�
 tags: [MachineLearning]
 author: jinhyo
 feature-img: /assets/img/pexels/triangular.jpeg 
-use_math: false
+use_math: true
 keywords: [LinearRegression, 선형회귀, 경사하강법, 최소자승법, OLS, GradientDescent]
 ---
 
