@@ -69,6 +69,7 @@ $$
 실제값 $y$와 예측값 $\hat{y}$의 차이를 오차(error)라고 한다. 실제값에서 예측값을 뺀 오차는 적을수록 예측이 정확하다는 뜻이다. 기계학습은 실제값과 예측값의 오차(error)를 최소화하는 $w$와 $b$를 찾아가는 과정이다. $w$, $b$와 오차의 관계를 함수로 나타낸 것을 비용함수(Cost function)라고 부른다. 동의어로 손실함수(Loss function), 목적함수(Objective function)라고 부르기도 한다.  
 
 오차에 대해 더 자세히 이해하기 위해서 예를 들어 보자. 근무 시간을 기반으로 성과급을 예측하는 문제가 있다고 하자. 근무 시간과 성과급에 대한 데이터는 다음과 같다.  
+
 <div align="center">
   <table>
     <thead>
@@ -187,7 +188,7 @@ $$
   
 $$
 \begin{align*} 
-w:=w- \alpha \frac {\partial}{\partial w} cost(w)
+w:=w- \alpha \frac {\partial}{\partial w} cost(w, b)
 \end{align*}
 $$  
 
