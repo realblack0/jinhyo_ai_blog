@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "평생학습(Lifelong Learning)에 대한 survey"
+title: "[딥러닝] 평생학습이란? (A Survey on Lifelong Learning)"
 tags: [DeepLearning]
 author: jinhyo
 feature-img: /assets/img/pexels/triangular.jpeg 
