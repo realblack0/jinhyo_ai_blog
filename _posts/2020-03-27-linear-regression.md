@@ -100,7 +100,7 @@ $$
       </tr>
     </tbody>
   </table>
-</div align="center">
+</div align="center">  
 
 근무 시간은 피처이고 성과급은 타겟이다. $w$와 $b$를 임의의 숫자 5과 2라고 하면 $\hat{y}=5x+2$이고, 모델은 다음과 같이 나타낼 수 있다.  
 
