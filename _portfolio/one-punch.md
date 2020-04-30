@@ -23,30 +23,30 @@ tags: [portfolio]
 > - ['독초 달여 먹는 민간요법'에 사망사고 잇따라…"주의 필요"](https://www.yna.co.kr/view/AKR20190819050400054), 2019-08-19
 > - [독성(毒性) 주의 한약재 복용 70대남성 사망](http://www.dailymedi.com/detail.php?number=843884), 2019-06-16
 
-## 프로젝트 기간
+### 프로젝트 기간
 
 2019년 7월 ~ 8월
 
-## 팀원 구성
+### 팀원 구성
 
 - 빅데이터 청년 인재 고려대학교 1조
 - 한의학 전공, 컴퓨터공학 전공, 통계학 전공, 경영학 전공 등 6명
 
 ## UI 소개
 
-### 메인 화면
+### 1. 메인 화면
 
 ![First_Screen-compressor](https://user-images.githubusercontent.com/50395556/80694291-4369d100-8b0f-11ea-86ea-45fa9f0b34d3.png)
 
 독약한방 프로젝트는 웹 인터페이스로 개발된 정보시스템입니다.
 
-### 가이드 화면
+### 2. 가이드 화면
 
 ![Guide-compressor](https://user-images.githubusercontent.com/50395556/80694294-45339480-8b0f-11ea-9406-b9933002cd74.png)
 
 감별할 약재 이미지를 드래그 앤 드롭 방식으로 업로드할 수 있습니다.
 
-### 대시보드
+### 3. 대시보드
 
 ![Main_Page-compressor](https://user-images.githubusercontent.com/50395556/80694299-45cc2b00-8b0f-11ea-88f4-03a6a8013c1a.png)
 
