@@ -79,7 +79,7 @@ Image Data Augmentation 기법으로 데이터셋을 확장하여 약 38,000 장
 MobileNet-v1, ResNet50, VGG16, VGG19, LeafNet, DenseNet201 등의 pre-trained model을 기반으로 Transfer Learning을 시도하였습니다.  
 성능(precision, recall)과 시간(processing time)을 비교하여 MobileNet-v2를 기반으로 최종모델을 개발하였습니다.
 
-### 2. XAI(설명가능한 딥러닝)
+#### 2. XAI(설명가능한 딥러닝)
 
 ![xai](https://user-images.githubusercontent.com/50395556/80697302-bffeae80-8b13-11ea-87a8-b78d593766a4.png)
 
