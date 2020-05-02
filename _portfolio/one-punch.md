@@ -3,7 +3,7 @@ layout: post
 title: "딥러닝을 활용한 독성약재 감별 정보시스템"
 img: "assets/img/portfolio/one-punch.png"
 date: 30 April 2020
-tags: [ortfolio]
+tags: [Portfolio]
 ---
 <div align="center">
   <a href="https://github.com/realblack0/One-Punch">
