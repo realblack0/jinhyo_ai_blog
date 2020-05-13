@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jupyter Notebook 테마 변경하는 방법""
+title: Jupyter Notebook 테마 변경하는 방법
 tags: [Python]
 author: jinhyo
 feature-img: /assets/img/pexels/triangular.jpeg 
@@ -16,7 +16,7 @@ jupyter notebook을 하루종일 보고 있자니 눈이 너무 아파서 다크
 
 스크롤이 길지만 실질적으로는 다음과 같은 코드 2줄이면 끝입니다.
 
-```
+```bash
 # jupyterteme 패키지 설치
 pip install jupyterthemes
 
@@ -82,13 +82,13 @@ jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -l
 
 jupyter notebook의 테마 7가지를 지원하며, 세부조정도 가능합니다.
 
-```
-pip install jupyterthems
+```bash
+pip install jupyterthemes
 ```
 
 ※ 혹시 버전에러가 발생할 경우 jupyter notebook과 jupyterthemes를 모두 업데이트해주세요.
 
-```
+```bash
 # jupyter notebook 최신버전
 pip install --upgrade notebook
 
@@ -105,7 +105,7 @@ jupyter notebook을 재시작할 필요없이 새로고침만 누르면 됩니�
 
 ### a. onedork
 
-```
+```bash
 jt -t onedork
 ```
 
@@ -119,7 +119,7 @@ jt -t onedork
 
 ### b. grade3
 
-```
+```bash
 jt -t grade3
 ```
 
@@ -133,7 +133,7 @@ jt -t grade3
 
 ### c. oceans16
 
-```
+```bash
 jt -t oceans16
 ```
 
@@ -147,7 +147,7 @@ jt -t oceans16
 
 ### d. chesterish
 
-```
+```bash
 jt -t chesterish
 ```
 
@@ -161,7 +161,7 @@ jt -t chesterish
 
 ### e. monokai
 
-```
+```bash
 jt -t monokai
 ```
 
@@ -175,7 +175,7 @@ jt -t monokai
 
 ### f. solarizedl
 
-```
+```bash
 jt -t solarizedl
 ```
 
@@ -189,7 +189,7 @@ jt -t solarizedl
 
 ### g. solarizedd
 
-```
+```bash
 jt -t solarizedd
 ```
 
@@ -213,7 +213,7 @@ jt -t solarizedd
 
 ![my theme notebook](https://user-images.githubusercontent.com/50395556/81770102-48208300-951a-11ea-85d6-6cc8ee021f3a.png)
 
-```
+```bash
 jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -lineh 115 -altmd  -kl -T -N
 ```
 
@@ -247,7 +247,7 @@ jt -t onedork -fs 115 -nfs 125 -tfs 115 -dfs 115 -ofs 115 -cursc r -cellw 80% -l
 
 jupyter themes 주인장의 추천 테마는 다음과 같습니다.
 
-```
+```bash
 # dark
 jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 ```
@@ -258,7 +258,7 @@ jt -t onedork -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 
 ### c. jupyterthemes 개발자의 추천 테마 (light)
 
-```
+```bash
 # light
 jt -t grade3 -fs 95 -altp -tfs 11 -nfs 115 -cellw 88% -T
 ```
@@ -273,7 +273,7 @@ jupyterthemes 공식문서에서 발췌한 내용입니다.
 
 **Command Line Usage**
 
-```
+```bash
 jt  [-h] [-l] [-t THEME] [-f MONOFONT] [-fs MONOSIZE] [-nf NBFONT]
     [-nfs NBFONTSIZE] [-tf TCFONT] [-tfs TCFONTSIZE] [-dfs DFFONTSIZE]
     [-m MARGINS] [-cursw CURSORWIDTH] [-cursc CURSORCOLOR] [-vim]
@@ -313,16 +313,13 @@ jt  [-h] [-l] [-t THEME] [-f MONOFONT] [-fs MONOSIZE] [-nf NBFONT]
 | Reset Default Theme   |   -r    |     --     |
 | Force Default Fonts   | -dfonts |     --     |
 
-
-옵션 설명 참고:
-
-[dunovank/jupyter-themes](https://github.com/dunovank/jupyter-themes)
+옵션 설명 참고: [dunovank/jupyter-themes](https://github.com/dunovank/jupyter-themes)
 
 ## 6. 기본 테마 되돌리기
 
 세팅에 망했다고 울지마세요. 한방에 원상복구 시켜드립니다.
 
-```
+```bash
 # 기본 세팅으로 되돌리기(restore)
 jt -r
 ```
