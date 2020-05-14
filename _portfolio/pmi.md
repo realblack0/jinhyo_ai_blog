@@ -3,6 +3,7 @@ layout: post
 title: "감성 사전에 기반한 준지도학습 감성분석 모델"
 img: "assets/img/portfolio/pmi.png"
 date: 15 May 2020
+use_math: true
 tags: [Portfolio]
 ---
 <div align="center">
@@ -11,7 +12,7 @@ tags: [Portfolio]
   </a>
 </div>
 
-# [감성 사전에 기반한 준지도학습 감성분석 모델](https://github.com/realblack0/semi-supervised-sentiment-analysis)
+# [감성사전 기반 준지도학습 감성분석 모델](https://github.com/realblack0/semi-supervised-sentiment-analysis)
 
 ## 모델 설명
 
