@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "감성 사전에 기반한 준지도학습 감성분석 모델"
+title: "감성사전에 기반한 준지도학습 감성분석 모델"
 img: "assets/img/portfolio/pmi.png"
 date: 15 May 2020
 use_math: true
@@ -134,7 +134,7 @@ pmi.plot()
 
 ## 코로나 뉴스 데이터에 적용한 샘플 코드
 
-[sample notebook 바로가기](https://github.com/realblack0/semi-supervised-sentiment-analysis/blob/master/sample/\(sample\)%ED%98%95%ED%83%9C%EC%86%8C%20%EB%B6%84%EC%84%9D.ipynb)
+[sample notebook 바로가기](https://github.com/realblack0/semi-supervised-sentiment-analysis/blob/master/sample/(sample)%ED%98%95%ED%83%9C%EC%86%8C%20%EB%B6%84%EC%84%9D.ipynb)
 
 ## 의존 패키지
 
