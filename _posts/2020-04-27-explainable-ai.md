@@ -34,7 +34,7 @@ XAI는 사람이 AI의 동작과 최종결과를 이해하고 올바르게 해�
 |관점|분류|
 |:---:|:---:|
 |Complexity|Intrinsic  vs  Post-hoc|
-|Scoop|Global  vs  Local|
+|Scop|Global  vs  Local|
 |Dependency|Model-specific  vs  Model-agnostic|
 
 ### 3.1. Complexity
