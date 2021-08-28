@@ -7,8 +7,5 @@ feature-img: "assets/img/pexels/circuit.jpeg"
 
 ![img](https://avatars2.githubusercontent.com/u/50395556?s=460&u=d28330a00da5a634499af9eb3441768d92e3bbdb&v=4)  
 
-현) AI 이노베이션 센터 조교
-
-CV와 NLP 중에 하나만 고르라면 못 고르겠어요. 둘다 하고 싶어요.  
-brain inspired learning에 관심이 많아요.  
-유니콘이 되고 싶어요.  
+고려대학교 인공지능학과 석박통합과정 재학중
+딥러닝 알고리즘 전문가가 되고 싶습니다.
